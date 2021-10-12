@@ -16,7 +16,7 @@
                             <li><a href="#">Categorias <span class="arrow_carrot-down"></span></a>
                                 <ul class="dropdown">
                                     @foreach($categorias as $categoria)
-                                        <li><a href="/categoria/{{$categoria->slug}}">{{$categoria->name}}</a></li>
+                                        <li><a href="{{route('categoria',$categoria->slug)}}">{{$categoria->name}}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
